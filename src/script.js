@@ -30,7 +30,7 @@ document.querySelector('button[type="submit"]')
     const fileField = document.querySelector('input[type="file"]')
     const successMessage = document.querySelector('.success')
     if (!firstNameField.value || !lastNameField.value || !emailField.value || !textareaField.value) {
-      return showAndHideErrorMessage()
+      //return showAndHideErrorMessage()
     }
     if (isPhoneRequired && !phoneField.value) {
       return showAndHideErrorMessage()
@@ -63,7 +63,7 @@ function showAndHideErrorMessage() {
   return
 }
 
-function hideMessageAfterTimeout(element) {
+ function hideMessageAfterTimeout(element) {
   setTimeout(function() {
     element.style.display = 'none'
   }, 3000)
